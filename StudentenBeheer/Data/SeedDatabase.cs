@@ -66,7 +66,7 @@ namespace StudentenBeheer.Data
                            ID = 'F',
                            Name = "Female"
 
-
+                          
                        },
 
                        new Gender
@@ -99,7 +99,27 @@ namespace StudentenBeheer.Data
                                    Deleted = DateTime.Now
 
 
-                               }
+                               },
+                                 new Student
+                                 {
+                                     Name = "Waldo",
+                                     Lastname = "Ierman",
+                                     Birthday = DateTime.Now,
+                                     GenderId = 'F',
+                                     Deleted = DateTime.MaxValue
+
+
+                                 },
+                                   new Student
+                                   {
+                                       Name = "Kevin",
+                                       Lastname = "Jos",
+                                       Birthday = DateTime.Now,
+                                       GenderId = 'F',
+                                       Deleted = DateTime.MaxValue
+
+
+                                   }
                         );
                     context.SaveChanges();
 
